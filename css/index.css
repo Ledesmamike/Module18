@@ -9,6 +9,14 @@ header {
  text-align: center;
 }
 
+h1{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: xx-large;
+  color: #2A2A2A;
+  text-transform: uppercase
+}
+
 body {
   background-image: url("../images/Smoke\ BG.jpg");
   background-size: cover;
@@ -60,14 +68,14 @@ margin:  50px auto;
 #categoryGrid {
   margin: 0px 5px;
   display: grid;
-  grid-template-rows: 600px 600px 600px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-columns: 2fr 2fr;
   grid-gap: 10px;
   grid-template-areas: 
-  "uxDesign motionGraphics illustration"
-  "uxDesign motionGraphics illustration"
-  "branding branding branding"
-  "branding branding branding";
+  "uxDesign motionGraphics"
+  "uxDesign motionGraphics" 
+  "illustration branding"
+  "illustration branding";
 }
 
 #uxDesign {
@@ -119,6 +127,8 @@ margin:  50px auto;
   border-bottom: 5px solid aqua;
 }
 
+
+
 footer {
   margin: 0px 0px 0px 0px;
   padding: 15px;
@@ -126,6 +136,7 @@ footer {
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 12px;
+  text-align: center;
 }
 
 
