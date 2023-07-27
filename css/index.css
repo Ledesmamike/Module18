@@ -58,46 +58,79 @@ width: 300px;
 margin:  50px auto;
 }
 
-.container {
-  width: 40%;
-  height: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 10px;
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
 }
 
-img {
-  height: 100%;
-  width: 100%;
+#categoryGrid {
+  margin: 0px 5px;
+  display: grid;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "uxDesign motionGraphics"
+  "uxDesign motionGraphics" 
+  "illustration branding"
+  "illustration branding";
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-  background-color: black;
+#uxDesign {
+  grid-area: uxDesign;
+  background-image: url("../images/UX\ UI\ Design.jpg");
+}
+#illustration {
+  grid-row: illustration;
+  background-image: url("../images/Illustration.jpg");
+}
+#branding {
+  grid-area: branding;
+  background-image: url("../images/Branding.jpg");
+}
+#motionGraphics {
+  grid-area: motionGraphics;
+  background-image: url("../images/Motion\ Graphics.jpg");
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
   cursor: pointer;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid aqua;
 }
 
-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px 0px 0px 0px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  margin: 0px 0px 0px 0px;
+  padding: 15px;
+  height: 25px;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  border-bottom: 5px solid aqua;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.categoryGrid:hover .overlay{
-opacity: 0.8;
-}
 
 
 footer {
